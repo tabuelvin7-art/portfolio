@@ -25,8 +25,8 @@ const projects = [
     description:
       'A personal portfolio website to showcase my projects and skills. Built with React, Framer Motion for animations, and CSS Modules for styling.',
     technologies: ['React', 'Framer Motion', 'CSS Modules', 'React Icons'],
-    github: 'https://github.com/yourusername/portfolio',
-    demo: 'https://elvinkhisa.com',
+    github: 'https://github.com/tabuelvin7-art/portfolio.git',
+    demo: 'https://portfolio-xi-ochre-88fhu6a88b.vercel.app/',
     image: 'portfolio.jpg',
   },
 ];
