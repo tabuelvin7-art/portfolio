@@ -15,7 +15,7 @@ const projects = [
     description:
       'A complete e-commerce solution with product catalog, shopping cart, order tracking .',
     technologies: ['React', 'Node.js', 'sQlite', 'express'],
-    github: 'https://github.com/yourusername/ecommerce-platform',
+    github: 'https://github.com/tabuelvin7-art/react-projects.git',
     demo: 'http://ecommerce-project-react-env.eba-mhstb3nj.eu-north-1.elasticbeanstalk.com/',
     image: 'ecommerce.jpg',
   },
