@@ -1,0 +1,114 @@
+.about {
+  padding: 100px 0;
+  background-color: #0a192f;
+  color: #e6f1ff;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  color: #ccd6f6;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.heading .line {
+  height: 1px;
+  width: 300px;
+  background-color: #233554;
+  margin-left: 20px;
+  position: relative;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.aboutText {
+  color: #8892b0;
+  line-height: 1.6;
+}
+
+.aboutText p {
+  margin-bottom: 1.5rem;
+}
+
+.aboutText p:last-child {
+  margin-bottom: 0;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skillsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+}
+
+.skillsList li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  color: #8892b0;
+}
+
+.skillsList li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .heading .line {
+    width: 100px;
+  }
+  
+  .skillsList ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+  
+  .skillsList ul {
+    grid-template-columns: 1fr;
+  }
+}
