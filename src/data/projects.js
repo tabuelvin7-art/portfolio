@@ -29,6 +29,36 @@ const projects = [
     demo: 'https://portfolio-murex-phi-48.vercel.app/',
     image: 'portfolio.jpg',
   },
+  {
+    id: 4,
+    title: 'Task Management System',
+    description:
+      'A comprehensive task management application for organizing and tracking tasks with features like priority levels, deadlines, and progress tracking.',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    github: 'https://github.com/tabuelvin7-art/task-management-system.git',
+    demo: 'https://task-management-system-mu.vercel.app/',
+    image: 'task-management.jpg',
+  },
+  {
+    id: 5,
+    title: 'Immunization System',
+    description:
+      'A digital health system for managing immunization records, scheduling vaccinations, and tracking patient vaccination history.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+    github: 'https://github.com/tabuelvin7-art/immunization-management-system.git',
+    demo: 'https://immunization-management-system-fron.vercel.app/',
+    image: 'immunization.jpg',
+  },
+  {
+    id: 6,
+    title: 'Car Rental System',
+    description:
+      'A full-featured car rental platform with vehicle browsing, booking management, payment processing, and customer dashboard.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+    github: 'https://github.com/tabuelvin7-art/carRental.git',
+    demo: 'https://car-rental-gold-nine.vercel.app/',
+    image: 'car-rental.jpg',
+  },
 ];
 
 export default projects;
