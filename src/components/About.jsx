@@ -22,11 +22,13 @@ const About = () => {
     'HTML5',
     'CSS3',
     'JavaScript (ES6+)',
-    'React.js',
-    'Bootstrap',
+    'React js',
+    'AWS web services',
     'Git',
     'Responsive Design',
     'Node.js',
+    'MongoDB',
+    'Express js'
     
     
   ];

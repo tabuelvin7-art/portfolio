@@ -1,8 +1,19 @@
 .about {
   padding: 100px 0;
-  background-color: #0a192f;
+  background: linear-gradient(180deg, #0d1b2a 0%, #0a192f 100%);
   color: #e6f1ff;
   position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #64ffda, transparent);
 }
 
 .container {
@@ -19,8 +30,11 @@
 }
 
 .heading h2 {
-  font-size: 2rem;
-  color: #ccd6f6;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #64ffda 0%, #5ce1e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 700;
   margin: 0;
   white-space: nowrap;
@@ -73,16 +87,25 @@
 .skillsList li {
   position: relative;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding: 0.5rem 0.8rem 0.5rem 2rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.9rem;
-  color: #8892b0;
+  color: #ccd6f6;
+  background: rgba(100, 255, 218, 0.05);
+  border-radius: 6px;
+  border-left: 2px solid #64ffda;
+  transition: all 0.3s ease;
+}
+
+.skillsList li:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateX(5px);
 }
 
 .skillsList li::before {
   content: '▹';
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   color: #64ffda;
   font-size: 1.2rem;
   line-height: 1.2;

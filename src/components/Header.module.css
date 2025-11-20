@@ -10,10 +10,11 @@
 }
 
 .header.scrolled {
-  background-color: rgba(10, 25, 47, 0.9);
+  background: rgba(10, 25, 47, 0.85);
   padding: 1rem 0;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px -10px rgba(100, 255, 218, 0.1);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
 }
 
 .container {
@@ -28,9 +29,17 @@
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #64ffda;
+  background: linear-gradient(135deg, #64ffda 0%, #5ce1e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-decoration: none;
   font-family: 'SF Mono', 'Fira Code', monospace;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .nav {
@@ -43,12 +52,32 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-family: 'SF Mono', 'Fira Code', monospace;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #64ffda, #5ce1e6);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 
 .nav a:hover {
   color: #64ffda;
+  background: rgba(100, 255, 218, 0.05);
+}
+
+.nav a:hover::after {
+  width: 80%;
 }
 
 .hamburger {
