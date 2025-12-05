@@ -43,10 +43,10 @@ const projects = [
     id: 5,
     title: 'Flight Booking System',
     description:
-      'A modern flight booking platform with real-time flight search, seat selection, booking management, and payment integration for seamless travel planning.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
-    github: 'https://github.com/tabuelvin7-art/flight-booking-system.git',
-    demo: 'https://flight-booking-demo.com',
+      'A modern flight booking platform with real-time flight search',
+    technologies: ['React-Typescript', 'Node.js', 'MongoDB', 'Express'],
+    github: 'https://github.com/tabuelvin7-art/flight-booking-sysem.git',
+    demo: 'https://flight-booking-sysem.vercel.app/',
     image: 'flight-booking.jpg',
   },
 ];
