@@ -26,20 +26,22 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     try {
-      // Here you would typically send the form data to a server
-      console.log('Form submitted:', data);
+      // Create mailto link with form data
+      const mailtoLink = `mailto:tabuelvin7@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+      )}`;
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Open default email client
+      window.location.href = mailtoLink;
       
-      // Show success message or redirect
-      alert('Thank you for your message! I will get back to you soon.');
+      // Show success message
+      alert('Opening your email client. Please send the email to complete your message.');
       
       // Reset the form after successful submission
       reset();
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('There was an error sending your message. Please try again.');
+      alert('There was an error. Please email directly to tabuelvin7@gmail.com');
     }
   };
 
